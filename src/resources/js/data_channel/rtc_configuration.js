@@ -7,8 +7,14 @@ export const rtcConfiguration = {
     {
       urls: ['stun:stun2.l.google.com:19302'],
     },
+    {
+      urls: "turn:openrelay.metered.ca:80",
+      username: "openrelayproject",
+      credential: "openrelayproject"
+    }
   ],
 };
+
 
 // Expose `rtcConfiguration` as a global variable so that it can be accessed in the browser console.
 // Refer to:
